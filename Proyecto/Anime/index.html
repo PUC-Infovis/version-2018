@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Project Visualization of information</title>
+    <!-- Librería D3 -->
+    <script src='lib/d3.js' charset='utf-8'></script>
+    <!-- Escalas Cromaticas -->
+    <script src="lib/d3-scale-chromatic.v1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Propio styles -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+
+    <!-- Propio styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Autocomplete -->
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+
+
+
+  </head>
+
+  <body id="titulo">
+
+    <!-- Navegador -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#titulo">Visualization of information</a>
+          <button class="navbar-toggler" type="button"
+                  data-toggle="collapse" data-target="#navbarResponsive"
+                  aria-controls="navbarResponsive" aria-expanded="false"
+                  aria-label="Toggle navigation">
+          </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Recomendador">Anime Recommendations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Buscador">Compare Anime</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary">
+      <br><br>
+        
+    </header>
+    <div class="container text-center">
+        <h1>Final Project - Anime Recommendations</h1>
+        <p class="lead">Freddie Venegas & Hernán Valdivieso</p>
+      </div>
+    <section id="Recomendador" class="bg-light">
+      <div class="container">
+          <h2>Anime Recommendations</h2>
+          
+          <div class="row">
+              
+              <div class="col-7">
+                <br>
+                  <div class="continer">
+                        <div id='grafo' class="graph_recomendation_2"></div>
+                  </div>
+              </div>
+
+              <div class="col-5">
+                  <br>                  
+                  <!-- <p>
+                    Hacer click a "Super Power" o "Action" cargará el grafo de recomendaciones
+                    de éstos generos. Además se puede buscar el grafo de recomendaciones de un anime
+                    en particular. Se encuentra habilitado panning y zooming en el grafo. Y en caso de hacer
+                    click en uno de los nodos, éste se agregará al bubblechart donde se podrá encontrar más
+                    información de él.
+                  </p> -->
+                    <div class="form-group">
+                  
+                        <!-- <label>Anime Genres</label>  -->
+                        <select class="form-control" id="genero_option">
+                          <option value="SuperPower">Super Power</option>
+                          <option value="Action">Action</option>
+                          <option value="Adventure">Adventure</option>
+                          <option value="Comedy">Comedy</option>
+                          <option value="Drama">Drama</option>
+                          <option value="Ecchi">Ecchi</option>
+                          <option value="Historical">Historical</option>
+                          <option value="Fantasy">Fantasy</option>
+                          <option value="Horror">Horror</option>
+                          <option value="Military">Military</option>
+                          
+                        </select>
+                    </div>
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="#" id="anime_autocomplete"
+                            placeholder="Enter anime" autocomplete="off">
+
+                      <span class="input">
+                          <button type="button" class="btn btn-primary" id="search_recomendation">Search</button>
+                          <button type="button" class="btn btn-primary" id="clean_recomendation">Clean</button>
+                      </span>                    
+                    </div>
+                    <!-- <h4>Limit Recomendations</h4>
+                    <div id="slidecontainer" class="form-group">
+                        <input type="range" min="1" max="1000" value="1000" class="slider"
+                         id="myRange_max" onchange="updateTextInput(this.value);">Max: 1000</input>
+                        
+                    </div>  
+                    <div id="slidecontainer" class="form-group">
+                      
+                        <input type="range" min="1" max="1000" value="1" class="slider"
+                        id="myRange_min" onchange="updateTextInput_2(this.value);">Min: 1</input>
+                      
+                    </div>  -->
+                    <div class="row">
+                        <div class="col">
+                          <br>
+                            <img id="image_anime_r" width=""/>
+                            
+                        </div>
+                      </div>
+                      <div class="row">
+                          
+                        <div class="col" id="text_anime_r">
+                          <br>
+                            <h4 id="anime_r"></h4>
+                        </div>
+                    
+                    </div> 
+              </div>
+          
+              
+              <script src="graph/script.js" charset='utf-8'></script>
+              
+      
+            </div>
+                           
+      </div>
+    
+      </section>
+
+
+      <section id="Buscador">
+        <div class="container">
+          <br>
+          <div class="row">
+            <div class="col-lg-9 ">
+              <h2>Compare Anime</h2>
+                <fieldset>
+                  <!-- <p>
+                   Permite comparar animes mediante el score, fecha de lanzamiento y cantidad de
+                   gente que lo ve. Además de los anime añadidos por el grafo de recomendaciomes,
+                   se pueden agregar otros mediante la búsqueuda de estos en la bara.  Pasando el
+                   mouse por encima de un anime, se muestra su nombre, fecha de lanzamiento,
+                   capitulos y una imagen representativa.
+                  </p> -->
+                  
+
+                  <div class="col">
+                      <div class="input-group">
+                          <input type="text" class="form-control" name="#" id="anime_autocomplete_1"
+                          placeholder="Enter anime" autocomplete="off">
+
+                          <span class="input">
+                              <button type="button" class="btn btn-primary" id="filter">Search</button>
+                              <button type="button" class="btn btn-default" id="clear">Clean</button>
+                            </span>
+                      
+                      </div>
+                      <br>
+                  </div>
+                  <div class="form-inline">
+                      <div class="form-group col-sd">
+                        <label>X Axis</label> 
+                        <select class="form-control" id="eje_x">
+                          <option value="aired">Release Date</option>
+                          <option value="score">Score</option>
+                          <option value="episodes">Episodes</option>
+                          <option value="members">Members</option>
+                        </select>
+                        <label>Y Axis</label>                         
+                        <select class="form-control" id="eje_y">
+                            <option value="aired">Release Date</option>
+                            <option value="score">Score</option>
+                            <option value="episodes">Episodes</option>
+                            <option value="members">Members</option>
+                        </select>
+                        
+                      
+                    </div>                     
+                    <div class="form-group col-sd">        
+                                      
+                    <button type="button" class="btn btn-default" id="legends_button_on">Show Legend</button>
+                    <button type="button" class="btn btn-default" id="legends_button_off">Hide Legend</button>
+                    
+                  </div>
+                  <div>
+                    <p>The size of the bubble represent the Members of that anime.</p>
+
+                  </div>
+                    <script src="script/autocomplete.js" charset='utf-8'></script>
+                    
+
+                </fieldset>
+            </div>
+
+            <div class="col-lg-3 mx-auto" id="toooodo">
+                <h3>Legend Studios</h3>
+
+                <div id="legend" class="legend"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <br>
+          <div class="row">
+            <div class="col-ms">
+                
+                <div id='container_bubble' class="graph_recomendation"></div>
+            </div>
+
+            <div class="col-ms">
+              <div class="row">
+
+                  <div class="col-ms">
+                      <img id="image_anime" width=""/>
+                    </div>
+                    
+                    <div class="col-xs">
+                      <h3 id="anime"></h3>
+                      <p id ="text_anime"></p>
+                    </div>
+
+                    
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+              
+              <table class="table">
+                  
+              </table>
+  
+  
+            </div>
+
+        </div>
+
+        <script src="graph/bubblechart.js" charset='utf-8'></script>
+        
+      </section>
+
+      <section id="Agradecimientos">
+
+        </section>
+
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">
+            Copyright &copy; IIC2026 - Visualization of information 2017-2
+          </p>
+        </div>
+      </footer>
+
+      <!-- Código jquery para scrolling nav -->
+      <script src="lib/jquery.min.js"></script>
+      <script src="lib/popper.min.js"></script>
+      <script src="lib/bootstrap.min.js"></script>
+      <script src="lib/jquery.easing.min.js"></script>
+
+      <script src="lib/scrolling-nav.js"></script>
+
+
+
+  </body>
+</html>

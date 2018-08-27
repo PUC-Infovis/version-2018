@@ -1,0 +1,18 @@
+<div class="header">
+    <h1>Visualización de Información</h1>
+    <h2>PUC Chile</h2> 
+
+    <table>
+        <tr class="pages-links">
+            {% for p in site.pages %}
+                {% if p.title %}
+                <th {% if page.url == p.url %} class="current-page" {% endif %}>
+                    <a href= {{ p.url }} ><strong>{{ p.title }}</strong></a>
+                </th>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    </table>
+
+
+</div>

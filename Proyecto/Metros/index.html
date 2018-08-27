@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Visualización Religiones</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/concurrency.css">
+<script src="node_modules/d3/build/d3.min.js"></script>
+<script src="node_modules/d3-scale-chromatic/build/d3-scale-chromatic.min.js" charset='utf-8'></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Visualizando el transporte público en Santiago</h2>
+    <p class="w3-opacity"><i>IIC2026 - Visualización de Información</i></p>
+    <p class="w3-opacity"><i>Prof. Denis Parra</i></p>
+    <p class="w3-justify">
+      En la siguiente visualización se muestra un mapa del Metro de Santiago a la izquierda.
+      Al pasar el mouse por encima se puede ver el nombre de la estación correspondiente.
+      A la derecha se puede ver una línea de tiempo separada por días de la semana,
+      donde cada punto en el tiempo representa la cantidad de gente por minuto
+      que entra al metro en total, y al pasar el mouse por el gráfico se muestra en el
+      mapa de la izquierda la cantidad de gente por minuto en cada estación en la hora
+      correspondiente.
+    </p>
+  </div>
+
+  <div id="concurrency"></div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <p class="w3-justify">
+      A continuación se puede ver un heatmap realizado con los datos de la aplicacion Apata.
+      Al cambiar el día en el selector, se identifican las comunas en donde se iniciarón
+      la mayor cantidad de viajes. La codificación se hizo en base a una escala secuencial,
+      donde el color rojo indica muchos viajes y el amarillo menor cantidad de viajes.
+      Es posible observar que la cantidad de viajes no parece variar mucho durante la semana,
+      lo que se ve contrastado con lo que ocurre el fin de semana.
+    </p>
+  </div>
+
+  <div id="dow-container">
+    <select id='dow-selector'>
+      <option value="0">Lunes</option>
+      <option value="1">Martes</option>
+      <option value="2">Miercoles</option>
+      <option value="3">Jueves</option>
+      <option value="4">Viernes</option>
+      <option value="5">Sabado</option>
+      <option value="6">Domingo</option>
+    </select>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
+<script type="text/javascript" src="js/concurrency.js"></script>
+<script type="text/javascript" src='scripts/heatmap_app.js' charset='utf-8'></script>
+
+</body>
+</html>
