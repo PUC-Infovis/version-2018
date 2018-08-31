@@ -9,7 +9,7 @@ title: Página Principal
 **Equipo Docente**
 - Profesor: [Denis Parra](http://web.ing.puc.cl/~dparra/)
 - Ayudantes: Fernando Florenzano, Hernán Valdivieso, Cristóbal Abarca
-
+- Textbook: [Visualization Analysis and Design by Munzner](https://www.cs.ubc.ca/~tmm/vadbook/)
 ## Planificación
 
 Espere que está cargando el spreadsheets con la planificación.
