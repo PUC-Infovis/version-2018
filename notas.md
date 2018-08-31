@@ -2,8 +2,17 @@
 layout: default
 title: Notas
 ---
+# Ponderaciones:
+
+$$\text{Promedio final } = 10\% \text{ participación} + 20\% \text{ lecturas} + 35\% \text{ tareas} + 35\% \text{ proyecto final}$$
+
+## Condiciones para aprobar
+- Promedio final $$\geq 3.95$$.
+- Promedio tareas $$\geq 3.95$$.
+- Promedio proyecto final $$\geq 3.95$$.
 
 # Notas
+
 
 Espere que está cargando el spreadsheets con las notas.
 
