@@ -4,12 +4,12 @@ title: Notas
 ---
 # Ponderaciones:
 
-$$\text{Promedio final } = 10\% \text{ participación} + 20\% \text{ lecturas} + 35\% \text{ tareas} + 35\% \text{ proyecto final}$$
+**Promedio final  = 10% participación + 20% lecturas + 35% tareas + 35% proyecto final**
 
 ## Condiciones para aprobar
-- Promedio final $$\geq 3.95$$.
-- Promedio tareas $$\geq 3.95$$.
-- Promedio proyecto final $$\geq 3.95$$.
+- Promedio final mayor o igual a 3,95.
+- Promedio tareas mayor o igual a 3,95.
+- Promedio proyecto final mayor o igual a 3,95.
 
 # Notas
 
