@@ -5,7 +5,7 @@ title: Proyectos
 
 # Proyectos
 
-<!-- 
-[Anime](Proyecto/Anime/index.html)
+En esta sección podrás encontrar links a los proyectos del semestre pasado.
 
-[Metros](Proyecto/Metros/index.html) -->
+- [Recomendación y comparación de anime](https://puc-infovis.github.io/Proyecto-2018-1-Anime/)
+- [Política](https://puc-infovis.github.io/Proyecto-2018-1-Politica/)
