@@ -16,7 +16,7 @@ Todas las clases y ayudantías están en el [Syllabus](https://github.com/PUC-In
 - [Validation](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/04-Validation.pdf)
 - [Marcas&Canales](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/05-Marcas%26Canales.pdf)
 - [Percepción](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/06-Percepci%C3%B3n.pdf)
-- [Rules of thumb](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/07-Rules%20of%20thumb.pdf)
+- [Rules of Thumb](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/07-Rules%20of%20thumb.pdf)
 - [Tables](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/08-Tables.pdf)
 - [Redes](https://github.com/PUC-Infovis/syllabus-2018/blob/master/Clases/09-Network.pdf)
 
