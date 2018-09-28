@@ -4,7 +4,7 @@ title: Notas
 ---
 # Ponderaciones:
 
-**Promedio final  = 10% participación + 20% lecturas + 35% tareas + 35% proyecto final**
+**Promedio final  = 10% participación + 20% controles + 35% tareas + 35% proyecto final**
 
 ## Condiciones para aprobar
 - Promedio final mayor o igual a 3,95.
