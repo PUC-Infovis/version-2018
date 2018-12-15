@@ -6,10 +6,28 @@ title: Notas
 
 **Promedio final  = 10% participación + 20% controles + 35% tareas + 35% proyecto final**
 
+## Tareas
+
+El curso cuenta con 3 tareas repartidas durante todo el semestre.
+
+## Proyecto
+
+Para el desarrollo del proyecto semestre existen 4 categorías de proyecto que pueden ser escogidas:
+
+- Crear un nuevo idiom.
+- Replicar un idiom de un paper.
+- Visualizar una base de datos.
+- Explicar un algoritmo.
+
+Este proyecto cuenta con 3 entregas con ponderación diferente:
+- Entrega 1 (15%): Propuestas
+- Entrega 2 (25%): Avance Intermedio
+- Entrega 3 (60%): Presentación final
+
 ## Condiciones para aprobar
 - Promedio final mayor o igual a 3,95.
 - Promedio tareas mayor o igual a 3,95.
-- Promedio proyecto final mayor o igual a 3,95.
+- Nota proyecto final mayor o igual a 3,95.
 
 # Notas
 
