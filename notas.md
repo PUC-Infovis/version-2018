@@ -19,10 +19,15 @@ Para el desarrollo del proyecto semestre existen 4 categorías de proyecto que p
 - Visualizar una base de datos.
 - Explicar un algoritmo.
 
+
 Este proyecto cuenta con 3 entregas con ponderación diferente:
 - Entrega 1 (15%): Propuestas
 - Entrega 2 (25%): Avance Intermedio
 - Entrega 3 (60%): Presentación final
+
+## Controles
+
+El curso cuenta con 2 controles los cuales evalúan la materia de forma acumulativa e incluyen la lectura de un paper notificado con antipicación durante el desarrollo del curso. Con evaluar de forma acumulativa se entiende con que toda la materia evaluada en el control 1 puede volver a ser preguntada en el control 2.
 
 ## Condiciones para aprobar
 - Promedio final mayor o igual a 3,95.
