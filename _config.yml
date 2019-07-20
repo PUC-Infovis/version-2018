@@ -3,6 +3,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Página para el curso Visualización de Información
 
 github_username: puc-infovis
+baseurl: /version-2018
 
 # Build settings
 markdown: kramdown
