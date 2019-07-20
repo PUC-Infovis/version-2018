@@ -7,7 +7,7 @@
             {% for p in site.pages %}
                 {% if p.title %}
                 <th {% if page.url == p.url %} class="current-page" {% endif %}>
-                    <a href= {{ p.url }} ><strong>{{ p.title }}</strong></a>
+                    <a href= /version-2018{{ p.url }} ><strong>{{ p.title }}</strong></a>
                 </th>
                 {% endif %}
             {% endfor %}
